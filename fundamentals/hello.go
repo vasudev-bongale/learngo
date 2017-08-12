@@ -2,10 +2,10 @@ package main
 
 import "fmt"
 
-// Struct - collection of types or fields
+// Struct - collection of types or fields used to create user defined types
 // There are no classes in go.
-// Notice captial 'S' in the name Salutation - indicates that the type can be accessible outside the module when imported, which is public.
-type Salutation struct {
+// Notice captial 'S' in the name Salute - indicates that the type can be accessible outside the module when imported, which is public.
+type Salute struct {
   name string
   message string
 }
@@ -39,9 +39,9 @@ func main() {
   fmt.Println(*mypointer) // prints value 'Great'
 
   //Declaration of user defined types
-  // var message = Salutation{} //valid declaration
-  var message = Salutation{message: "Joe", name: "Hello!"} // keyword declaration
-  message.name = *mypointer // from the Salutation Struct, the fields can be individually assigned
+  // var message = Salute{} //valid declaration
+  var message = Salute{message: "Joe", name: "Hello!"} // keyword declaration
+  message.name = *mypointer // from the Salute Struct, the fields can be individually assigned
   message.message = "Hello!"
 
   fmt.Println(message)
