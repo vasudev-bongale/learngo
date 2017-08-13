@@ -27,6 +27,7 @@ const (
 func main() {
 
   //Declaration and initialization
+  // Note: Unlink other languages, the variable type is followed by the variable name. 
   var var_name string = "Nice"
   //var var_name2 = "Auto" // Types can be automatically identified by Go
   //var_name3 := "Good" // Another form which can be used in the main function
